@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    text-align: center;
+    margin: auto;
+    grid-template:
+      "left-icon-menu    header  header"     70px
+      "left-icon-menu  Sections    Main-chat" 3fr
+      "left-icon-menu  Sections    Main-chat" 1fr /
+      70px     250px    5fr;
+      height: 700px;
+   }
+   
+.header {
+    grid-area: header;
+    background-color: red;
+}
+   
+div.left-icon-menu {
+    grid-area: left-icon-menu;
+    background-color: lightblue;
+}
+div.Sections {
+    grid-area: Sections;
+    background-color: rgb(13, 148, 232);
+}
+
+div.Main-chat {
+    grid-area: Main-chat;
+    background-color: royalblue;
+}
+
+.container>div {
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+   
+ 
